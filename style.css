@@ -100,6 +100,7 @@ body {
   }
 
   .barcode {
+    width: 100%;
     padding: 0.5em 0;
     text-align: center;
     border-radius: 5px;
@@ -129,7 +130,7 @@ body {
 
   /* info-location button style */
   .info-location button {
-    padding: 0.5em 1em;
+    padding: 0.5em;
     margin-top: 0.5em;
     margin-bottom: 1em;
     border-radius: 5px;
@@ -189,14 +190,6 @@ body {
     object-fit: cover;
   }
 
-  .info-website {
-    margin-top: 1em;
-  }
-
-  .info-website p:first-child {
-    margin-bottom: 1em;
-  }
-
   /* body-content style */
   .body-content {
     margin-top: 1em;
@@ -237,6 +230,7 @@ body {
   }
 
   .barcode {
+    width: 100%;
     padding: 0.5em 0;
     text-align: center;
     border-radius: 5px;
