@@ -69,10 +69,10 @@ const btnCopyBri = document.querySelector('.btn-bri');
 const btnTextBri = `<i class="fa-solid fa-copy"></i> Salin Nomor`;
 const copyTextBri = `<i class="fa-solid fa-copy"></i> Berhasil Di Salin`;
 
-const spaceTextBri = setInterval(function () {
+const spaceTextBarcode = setInterval(function () {
     btnCopyBri.addEventListener('click', function () {
-        const briNumber = document.querySelector('.bri-number').innerHTML;
-        navigator.clipboard.writeText(briNumber);
+        const barcodeLink = document.querySelector('.bri-number').innerHTML;
+        navigator.clipboard.writeText(barcodeLink);
 
         btnCopyBri.innerHTML = copyTextBri;
     });
@@ -80,6 +80,26 @@ const spaceTextBri = setInterval(function () {
     if (btnTextBri != copyTextBri) {
         clearInterval();
         btnCopyBri.innerHTML = btnTextBri;
+    };
+
+}, 2000);
+
+// copy barcode link button onclick
+const btnCopyBarcode = document.querySelector('.btn-barcode');
+const btnTextBarcode = `<i class="fa-solid fa-copy"></i> Salin Link`;
+const copyTextBarcode = `<i class="fa-solid fa-copy"></i> Berhasil Di Salin`;
+
+const spaceTextBri = setInterval(function () {
+    btnCopyBarcode.addEventListener('click', function () {
+        const briNumber = document.querySelector('.barcode-link').innerHTML;
+        navigator.clipboard.writeText(briNumber);
+
+        btnCopyBarcode.innerHTML = copyTextBarcode;
+    });
+
+    if (btnTextBarcode != copyTextBarcode) {
+        clearInterval();
+        btnCopyBarcode.innerHTML = btnTextBarcode;
     };
 
 }, 2000);

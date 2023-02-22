@@ -17,6 +17,7 @@
   --white-color: #fff;
   --grey-color: #3c4144;
   --red-color: #cd1f20;
+  --green-color: #2f701e;
 }
 
 /* set html & body style */
@@ -76,6 +77,10 @@ body {
     border: 2px solid var(--grey-color);
   }
 
+  .bri-bank {
+    margin-bottom: 1.5em;
+  }
+
   .detail h4 {
     margin-bottom: 0.5em;
     color: var(--red-color);
@@ -94,10 +99,39 @@ body {
     background-color: var(--red-color);
   }
 
+  .barcode {
+    padding: 0.5em 0;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--white-color);
+    background-color: var(--green-color);
+  }
+
+  .barcode img {
+    width: 65%;
+    object-fit: cover;
+    margin-top: 0.5em;
+    border-radius: 5px;
+  }
+
+  .barcode button {
+    width: 75%;
+    padding: 0.5em;
+    margin: 0.5em auto;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-roboto);
+    font-size: var(--font-size);
+    color: var(--white-color);
+    background-color: var(--red-color);
+  }
+
   /* info-location button style */
   .info-location button {
-    padding: 0.5em;
+    padding: 0.5em 1em;
     margin-top: 0.5em;
+    margin-bottom: 1em;
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -130,8 +164,8 @@ body {
 
 /* Medium devices (landscape tablets, 550px and up) */
 @media screen and (min-device-width: 550px) and (max-device-width: 992px) and (orientation: landscape) {
-   /* title style */
-   .title {
+  /* title style */
+  .title {
     width: 100%;
     padding: 1em;
     text-align: center;
@@ -155,6 +189,14 @@ body {
     object-fit: cover;
   }
 
+  .info-website {
+    margin-top: 1em;
+  }
+
+  .info-website p:first-child {
+    margin-bottom: 1em;
+  }
+
   /* body-content style */
   .body-content {
     margin-top: 1em;
@@ -170,6 +212,10 @@ body {
     padding: 1em;
     border-radius: 5px;
     border: 2px solid var(--grey-color);
+  }
+
+  .bri-bank {
+    margin-bottom: 1.5em;
   }
 
   .detail h4 {
@@ -190,10 +236,39 @@ body {
     background-color: var(--red-color);
   }
 
+  .barcode {
+    padding: 0.5em 0;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--white-color);
+    background-color: var(--green-color);
+  }
+
+  .barcode img {
+    width: 65%;
+    object-fit: cover;
+    margin-top: 0.5em;
+    border-radius: 5px;
+  }
+
+  .barcode button {
+    width: 75%;
+    padding: 0.5em;
+    margin: 0.5em auto;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-roboto);
+    font-size: var(--font-size);
+    color: var(--white-color);
+    background-color: var(--red-color);
+  }
+
   /* info-location button style */
   .info-location button {
     padding: 0.5em;
     margin-top: 0.5em;
+    margin-bottom: 1em;
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -212,7 +287,7 @@ body {
   /* copyright style */
   .copyright {
     text-align: center;
-    margin-top: 3em;
+    margin-top: 2em;
     padding: 0.5em;
     color: var(--white-color);
     background-color: var(--red-color);
