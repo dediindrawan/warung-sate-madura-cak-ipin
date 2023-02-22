@@ -93,3 +93,15 @@ function displayCopyright() {
     years.innerHTML = `${year}`;
 }
 displayCopyright();
+
+// add event when user are click button text me by whatsapp
+document.querySelector('.btn-message').addEventListener('click', () => {
+    // create new function
+    getMessage();
+});
+
+// executed get message function
+function getMessage() {
+    // // direct to whatsapp number
+    window.open('https://api.whatsapp.com/send?phone=+6281808348543&text=Hallo, Warung Sate Madura Cak Ipin..');
+};
